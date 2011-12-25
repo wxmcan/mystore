@@ -1,0 +1,20 @@
+login: &login
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: root
+  host: localhost
+  socket: /tmp/mysql.sock
+  reconnect: true
+
+development:
+  database: mystore_development
+  <<: *login
+
+test:
+  database: mystore_test
+  <<: *login
+
+production:
+  database: mystore
+  <<: *login

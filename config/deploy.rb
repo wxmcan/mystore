@@ -124,6 +124,3 @@ before "deploy:symlink", "deploy:symlink_shared"
 #before "deploy:restart", "deploy:update_crontab"
 #before "deploy:restart", "ts:restart"
 #before "deploy:restart", "delayed_job:restart"
-#after "deploy:restart", "deploy:jammit"
-
-#before "deploy:restart", "sitemap:refresh_no_ping"

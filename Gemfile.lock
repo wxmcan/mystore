@@ -92,7 +92,7 @@ GEM
       fastthread (>= 1.0.1)
       gem_plugin (>= 0.2.3)
     multi_json (1.0.4)
-    mysql2 (0.2.17)
+    mysql2 (0.3.11)
     nested_set (1.6.8)
       activerecord (>= 3.0.0)
       railties (>= 3.0.0)
