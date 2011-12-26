@@ -7,7 +7,7 @@ gem 'json', '1.6.3'
 gem 'jquery-rails', '1.0.19'
 gem 'therubyracer', '0.9.9'
 group :assets do
-  gem 'mongrel'
+  gem 'mongrel', '1.2.0.pre2'
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
