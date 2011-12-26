@@ -1,10 +1,11 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
-gem 'spree'
-gem 'mysql2'
-gem 'json'
-gem 'jquery-rails'
+gem 'spree', '0.70.3'
+gem 'mysql2', '0.3.11'
+gem 'json', '1.6.3'
+gem 'jquery-rails', '1.0.19'
+gem 'therubyracer', '0.9.9'
 group :assets do
   gem 'mongrel'
   gem 'sass-rails',   '~> 3.1.5'

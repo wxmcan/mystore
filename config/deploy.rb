@@ -124,3 +124,6 @@ before "deploy:symlink", "deploy:symlink_shared"
 #before "deploy:restart", "deploy:update_crontab"
 #before "deploy:restart", "ts:restart"
 #before "deploy:restart", "delayed_job:restart"
+after 'deploy:update_code' do
+  run "cd #{release_path}; RAILS_ENV=production rake assets:precompile"
+end
