@@ -15,5 +15,5 @@ test:
   <<: *login
 
 production:
-  database: mystore
+  database: mystore_development
   <<: *login

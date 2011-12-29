@@ -18,7 +18,9 @@ group :production do
   gem 'execjs'
   gem 'therubyracer', '0.9.9'
 end
+#gem "spree_social", :git => 'git://github.com/spree/spree_social.git'
+#gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git"
+gem 'spree_rdr_theme', :git => 'git://github.com/spree/spree_rdr_theme.git'
 #gem 'spree_wishlist', :git => 'git://github.com/spree/spree_wishlist.git'
 #gem 'spree_email_to_friend'
-gem 'spree_rdr_theme', :git => 'git://github.com/spree/spree_rdr_theme.git'
 #gem 'spree_blue_theme', :git => 'git://github.com/spree/spree_blue_theme.git'
