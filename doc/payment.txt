@@ -1,0 +1,26 @@
+guide:
+http://www.codyfauser.com/2008/1/17/paypal-express-payments-with-activemerchant
+
+https://developer.paypal.com
+bob.wang@beltal.com
+123456qaz
+
+buyer:
+buyer_1299815717_per@beltal.com
+12345678
+bob.wa_1316758310_per@beltal.com
+12345678
+
+# Seller account
+Test Account: seller_1299815549_biz@beltal.com
+API Username: seller_1299815549_biz_api1.beltal.com
+API Password: 1299815559
+Signature: A4foEdLMhGC1PbOqjKeK7PSiIgYZA.x6.2dco4aJSGJKXo4NTJjXu1aD
+
+# Pro accont
+pro_1317006263_biz@beltal.com
+
+# Test url
+curl -d "transaction_id=3XC103945N720211C&invoice=923204115&payment_status=Completed&amount=4" http://localhost:3000/payment_notifications
+
+curl -d "txn_type=cart&txn_id=9XC103945N720211C&invoice=923204115&payment_status=Completed&payment_type=instant&mc_currency=USD&mc_gross=4.0&payer_email=test@beltal.com&payer_status=verified" http://localhost:3000/payment_notifications
