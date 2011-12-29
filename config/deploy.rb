@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+load 'deploy/assets'
 default_run_options[:pty] = false
 set :application, 'www.4star.cn'
 set :scm, "git"
@@ -7,6 +8,7 @@ set :branch, "master"
 
 set :deploy_to, "/var/www/apps/#{application}"
 role :app, application, :primary => true
+role :web, application, :primary => true
 
 set :user, "bob" #proc { Capistrano::CLI.password_prompt("Server User: ") }
 set :password, "fishmango" #proc { Capistrano::CLI.password_prompt("Server Password : ") }
