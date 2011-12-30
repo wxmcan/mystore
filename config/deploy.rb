@@ -1,7 +1,7 @@
 require "bundler/capistrano"
 #load 'deploy/assets'
 default_run_options[:pty] = false
-set :application, 'www.4star.cn'
+set :application, 'www.faceruby.com'
 set :scm, "git"
 set :repository, "git@github.com:wxmcan/mystore.git"
 set :branch, "master"
