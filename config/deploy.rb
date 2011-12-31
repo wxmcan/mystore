@@ -111,16 +111,6 @@ namespace :ts do
   end
 end
 
-namespace :sitemap do
-  task :refresh, :roles => :app do
-    run "cd #{current_release} && rake sitemap:refresh RAILS_ENV=production"
-  end
-
-  task :refresh_no_ping, :roles => :app do
-    run "cd #{current_release} && rake sitemap:create RAILS_ENV=production"
-  end
-end
-
 before "deploy:symlink", "deploy:symlink_shared"
 #before "deploy:restart", "deploy:migrate"
 #before "deploy:restart", "deploy:update_crontab"
