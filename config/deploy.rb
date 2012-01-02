@@ -11,7 +11,7 @@ role :app, application, :primary => true
 role :web, application, :primary => true
 
 set :user, "bob" #proc { Capistrano::CLI.password_prompt("Server User: ") }
-set :password, "fishmango" #proc { Capistrano::CLI.password_prompt("Server Password : ") }
+set :password, proc { Capistrano::CLI.password_prompt("Server Password : ") }
 set :use_sudo, false
 
 set :rvm_ruby_string, "ree-1.8.7-2011.03"
@@ -30,6 +30,7 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/db/sphinx #{release_path}/db/sphinx"
     run "ln -nfs #{shared_path}/cache/products #{release_path}/public/products"
     run "ln -nfs #{shared_path}/sitemaps #{release_path}/public/sitemaps"
+    run "ln -nfs #{shared_path}/spree #{release_path}/public/spree"
   end
 
   desc "Update the crontab file"
