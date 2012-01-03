@@ -18,6 +18,8 @@ group :production do
   gem 'execjs'
   gem 'therubyracer', '0.9.9'
 end
+gem "spree_google_base"
+gem "spree_google_merchant", :git => 'git://github.com/sebastyuiop/spree_google_merchant.git'
 gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git", :ref => "bea1aa48e0089083546bec4b19565a40e9a50a20"
 gem 'spree_analytics', :git => "git@github.com:spree/spree_analytics.git"
 #gem "spree_social", :git => 'git://github.com/spree/spree_social.git'

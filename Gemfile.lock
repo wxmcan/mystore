@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/sebastyuiop/spree_google_merchant.git
+  revision: 385d59a0086acee5e77398a5424fba255b70cc0b
+  specs:
+    spree_google_merchant (0.60.0.RC1)
+      spree_core (>= 0.60.0.RC1)
+
+GIT
   remote: git://github.com/spree/spree_paypal_express.git
   revision: bea1aa48e0089083546bec4b19565a40e9a50a20
   ref: bea1aa48e0089083546bec4b19565a40e9a50a20
@@ -193,6 +200,8 @@ GEM
       stringex (= 1.0.3)
     spree_dash (0.70.3)
       spree_core (= 0.70.3)
+    spree_google_base (0.30.1)
+      spree_core (>= 0.30.1)
     spree_promo (0.70.3)
       spree_auth (= 0.70.3)
       spree_core (= 0.70.3)
@@ -233,6 +242,8 @@ DEPENDENCIES
   sass-rails (~> 3.1.5)
   spree (= 0.70.3)
   spree_analytics!
+  spree_google_base
+  spree_google_merchant!
   spree_paypal_express!
   spree_rdr_theme!
   sqlite3
